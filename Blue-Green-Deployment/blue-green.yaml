@@ -1,0 +1,76 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: demo
+---
+apiVersion: argoproj.io/v1alpha1
+kind: Rollout
+metadata:
+  name: blue-green
+  namespace: demo
+spec:
+  selector:
+    matchLabels:
+      app: apache
+  replicas: 3
+  strategy:
+    blueGreen:
+      activeService: bluegreen-service-active
+      previewService: bluegreen-service-preview
+      autoPromotionEnabled: false
+  template:
+    metadata:
+      labels:
+        app: apache
+  spec:
+    containers:
+    - name: apache-container
+      image: https:2.4     ### httpd:2.4.59
+      ports:
+      - containerPort: 80
+---      
+apiVersion: v1
+kind: Service
+metadata:
+  name: bluegreen-service-active
+  namespace: demo
+spec:
+  selector:
+    app: apache
+  ports:
+  - port: 80
+    protocol: TCP
+    targetPort: 80
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: bluegreen-service-preview
+  namespace: demo
+spec:
+  selector:
+    app: apache
+  ports:
+  - port: 80
+    protocol: TCP
+    targetPort: 80
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: bluegreen-ingress
+  namespace: demo
+  annotations:
+    kubernetes.io/ingress.class: nginx
+spec:
+  rules:
+  - host: www.singhritesh85.com
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: bluegreen-service-active
+            port:
+              name: http
