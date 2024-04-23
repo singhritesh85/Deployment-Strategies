@@ -69,4 +69,4 @@ spec:
           service:
             name: bluegreen-service-active
             port:
-              name: http
+              name: 80
