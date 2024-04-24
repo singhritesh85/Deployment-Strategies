@@ -16,3 +16,7 @@ Following are the mainly used deployment strategies followed in DevOps practices
 **(c) Blue-Green Deployment** In Blue-Green Deployment there is an active version (older version) of application which is also called as **Blue**. The newer version of application is called as preview version (also called as **Green**) which will be tested first and if every thing goes well then newer version will replace the older version. In order to achieve this we need to promote the rollout.
 <br><br/>
 **(d) Canary Deployment** In Canary deployment you can split the traffic between newer version of application and older version of application. If you satisfied with the newer version of application then you can promote the rollout to newer version of application.
+<br><br/>
+```
+You can use Rolling Update, Blue-Green Deployment or Canary Deployment for Production Environment.
+```
