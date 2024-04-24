@@ -5,3 +5,8 @@
 I have created EKS Cluster using the terraform script https://github.com/singhritesh85/terraform-eks-withaddons.git with keeping the desired, min and max node count as 4.
 ![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/679a10e4-ce04-4ae4-a60a-d082b07ad4f6)
 ![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/bfa079a1-0fe0-4820-b24c-65d8bc5c8fca)
+<br><br/>
+**To demonstrate Blue-Green Deployment I have used ArgoCD and Argo Rollout.** For ingress controller I have used nginx ingress controller.
+<br><br/>
+For older image I have used httpd:2.4.55 and newer version of image I have used nginx:1.25.5. 
+<br><br/>
