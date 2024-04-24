@@ -35,3 +35,4 @@ Install Argocd as shown in the screenshot below
 ![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/f405a881-96bc-44fc-9858-dc4b32545363)
 ![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/ec11029c-5c50-4221-bd45-8813a58dd20e)
 ![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/73bc5beb-07d4-4e66-95bc-b89f4b8d4505)
+![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/98b7d8f9-f3a9-4ee2-9ab4-dc0dadf1eed7)
