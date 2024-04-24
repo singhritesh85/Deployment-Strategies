@@ -6,7 +6,7 @@
 <br><br/>
 For older image I have used httpd:2.4.55 and newer version of image I have used nginx:1.25.5. 
 <br><br/>
-![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/cc505e05-6544-428c-abb5-7d9a94a9b26e)
+![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/642539d6-b954-482a-bd7d-19e76a2bb561)
 <br><br/>
 ![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/2bd0ffa0-a910-4315-8831-49f818926d0c)
 <br><br/>
