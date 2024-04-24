@@ -29,3 +29,7 @@ edit the service for nginx-ingress-controller and provide the ARN of Amazon Cert
 ![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/1840cded-0245-45fa-87d9-7a33ad051b5d)
 ![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/513b2a7d-b20c-41f8-bf3a-c9696376334d)
 ![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/148f9dba-2a52-444e-900a-e16e12f5c81a)
+<br><br>
+Install Argocd as shown in the screenshot below
+<br><br/>
+![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/f405a881-96bc-44fc-9858-dc4b32545363)
