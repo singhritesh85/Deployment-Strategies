@@ -49,4 +49,9 @@ kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath='{.data.pas
 Change the ArgoCD password as shown below in screenshot
 ![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/4718e222-0a5e-4074-abf3-0fdd75f1a967)
 ![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/a339cee7-e103-4703-885e-c8fad7a84da0)
+<br><br/>
+Now Login with new password into ArgoCD GUI and create the application as shown in the screenshot below
+<br><br/>
+![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/0c3f15b3-e7a4-4a86-99a1-37cb221511f7)
+![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/a863271f-3134-403f-aec7-5ea3fb2a117b)
 
