@@ -8,6 +8,6 @@ For older image I have used httpd:2.4.55 and newer version of image I have used 
 <br><br/>
 ![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/cc505e05-6544-428c-abb5-7d9a94a9b26e)
 <br><br/>
-<img align="center">![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/cf016119-3ac9-4f67-ba2c-c3a40afc2f7e)<img/>
+<div style="text-align:center"><img src="![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/cf016119-3ac9-4f67-ba2c-c3a40afc2f7e)" /></div>
 <br><br/>
 ![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/7568dff2-8ce2-43fa-ab92-bc85bf04215d)
