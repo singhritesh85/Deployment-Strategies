@@ -76,5 +76,33 @@ Now Login with new password into ArgoCD GUI and create the application as shown 
 After Deploying Application through ArgoCD
 ![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/492ee2ce-be53-4175-b17e-daa03e406d86)
 ![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/d6443f77-559d-425f-abca-bebb2bd97320)
+<br><br/>
+Test the Active Application using the URL
+![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/e6fb25a3-b766-4825-b348-ec46b8cb5ade)
+![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/57dc29e7-03a4-4e1c-abc6-28d5435fc22e)
+Now change the Image of the Application and use a new image nginx:1.25.5 as a new image.
+![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/eed481be-bac3-4b57-9138-9bd807d023cb)
+<br><br/>
+As the sync is Automatic in ArgoCD So changes in GitHub Repository will be deployed Automatically.
+<br><br/>
+![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/1a5a45fd-a419-45ba-ab7e-5ff3a5718cd4)
+<br><br/>
+Now test the newer version of Application using Preview Service. To do so change the service type as LoadBalancer instead of ClusterIP and after testing rechnage it to ClusterIP from LoadBalancer as shown in the screenshot below
+![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/f55cf143-0b4c-4c26-95f2-df6000c7b76b)
+<br><br/>
+I am verified that I am able to access the newer version of Application as hown in the screenshot below
+![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/eee2c5f5-0631-4a52-8bd4-5448c002a531)
+Now rechange the service type of preview service as ClusterIP from LoadBalancer
+![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/619d2512-0029-4dc1-9fa8-bf7baba795d7)
+Finally Promote the rollout 
+```
+kubectl get ro -n <namespace>
+kubectl argo rollouts get rollout <rollout-name> -n <namespace>
+kubectl argo rollouts promote <rollout-name> -n <namespace>
+```
+![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/c02a09b7-4829-4256-a9a9-e6ef0c6abebf)
+![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/4ecf38aa-d35f-4bcd-b318-79175c3a138f)
+![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/7d55a0c7-5b1a-45c4-ab8a-4f995837af89)
+
 
 
