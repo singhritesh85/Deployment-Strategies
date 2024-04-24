@@ -10,5 +10,4 @@ For older image I have used httpd:2.4.55 and newer version of image I have used 
 <br><br/>
 ![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/cf016119-3ac9-4f67-ba2c-c3a40afc2f7e)
 <br><br/>
-![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/67fb5682-727d-4343-8ae6-40705dad80ae)
-
+![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/7568dff2-8ce2-43fa-ab92-bc85bf04215d)
