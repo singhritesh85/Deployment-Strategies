@@ -104,5 +104,8 @@ kubectl argo rollouts promote <rollout-name> -n <namespace>
 ![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/4ecf38aa-d35f-4bcd-b318-79175c3a138f)
 ![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/7d55a0c7-5b1a-45c4-ab8a-4f995837af89)
 
+Now I am able to access Nginx home page from the URL of the Application
+<br><br/>
+![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/5e34236a-4ff1-4acd-8af1-eca88d3c22ac)
 
 
