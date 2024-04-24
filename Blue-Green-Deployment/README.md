@@ -15,3 +15,16 @@ For older image I have used httpd:2.4.55 and newer version of image I have used 
 ![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/2bd0ffa0-a910-4315-8831-49f818926d0c)
 <br><br/>
 ![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/7568dff2-8ce2-43fa-ab92-bc85bf04215d)
+<br><br/>
+**Install Nginx Ingress Controller**
+<br><br/>
+```
+kubectl create ns ingress-nginx
+helm repo add ingress-nginx https://kubernetes.github.io/ingress-nginx
+helm repo update
+helm install ingress-nginx ingress-nginx/ingress-nginx -n ingress-nginx
+```
+edit the service for nginx-ingress-controller and provide the ARN of Amazon Certificate Manager in annotations, chnage the targetPort as http instead of https as shown in the screenshot below.
+![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/58721827-5643-4632-9c43-61312deeec70)
+![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/1840cded-0245-45fa-87d9-7a33ad051b5d)
+![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/513b2a7d-b20c-41f8-bf3a-c9696376334d)
