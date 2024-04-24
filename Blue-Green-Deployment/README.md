@@ -2,6 +2,8 @@
 
 I have create EKS Cluster using the terraform script https://github.com/singhritesh85/terraform-eks-withaddons.git with keeping the desired, min and max node count as 4.
 ![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/f2bbbd0d-1529-4a47-9829-51187db434a5)
+![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/29a92a2a-84ae-442a-81ee-180e7ab070e7)
+
 <br><br/>
 **Blue-Green Deployment** In Blue-Green Deployment there is an active version (older version) of application which is also called as **Blue**. The newer version of application is called as preview version (also called as **Green**) which will be tested first and if every thing goes well then newer version will replace the older version. In order to achieve this we need to promote the rollout.
 
