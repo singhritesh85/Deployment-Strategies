@@ -50,8 +50,30 @@ Change the ArgoCD password as shown below in screenshot
 ![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/4718e222-0a5e-4074-abf3-0fdd75f1a967)
 ![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/a339cee7-e103-4703-885e-c8fad7a84da0)
 <br><br/>
+Install Argo Rollout Controller
+```
+kubectl create namespace argo-rollouts
+kubectl apply -n argo-rollouts -f https://github.com/argoproj/argo-rollouts/releases/latest/download/install.yaml
+```
+<br><br/>
+Install Argo Rollouts Kubectl plugin
+```
+curl -LO https://github.com/argoproj/argo-rollouts/releases/latest/download/kubectl-argo-rollouts-linux-amd64
+chmod +x ./kubectl-argo-rollouts-linux-amd64
+sudo mv ./kubectl-argo-rollouts-linux-amd64 /usr/local/bin/kubectl-argo-rollouts
+```
+<br><br/>
+Initially kind: Rollout is not present on the EKS cluster but after Installation of Argo Rollout Controller and Argo Rollout Plugin it will present.
+<br><br/>
+![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/ff2f0213-5ef1-411d-b7bc-c976b7c7c065)
+<br><br/>
 Now Login with new password into ArgoCD GUI and create the application as shown in the screenshot below
 <br><br/>
 ![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/0c3f15b3-e7a4-4a86-99a1-37cb221511f7)
-![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/a863271f-3134-403f-aec7-5ea3fb2a117b)
+![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/aac8b30d-aac1-4c94-8e0e-f6819a109b62)
+![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/f76afa59-e528-4489-9472-7645e4a8e29c)
+<br><br/>
+After Deploying Application through ArgoCD
+![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/492ee2ce-be53-4175-b17e-daa03e406d86)
+
 
