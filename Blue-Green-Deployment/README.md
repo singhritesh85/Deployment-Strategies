@@ -108,5 +108,7 @@ Now I am able to access Nginx home page from the URL of the Application
 <br><br/>
 ![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/5e34236a-4ff1-4acd-8af1-eca88d3c22ac)
 
-
+<br><br/>
+You can also mention **revisionHistoryLimit** in the blue-green.yaml file which means how many old replicasets you want to retain the default value is 10. 
+<br><br/>
 **Reference**=https://argo-rollouts.readthedocs.io/en/stable/features/bluegreen/
