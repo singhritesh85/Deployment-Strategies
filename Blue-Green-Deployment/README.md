@@ -75,5 +75,6 @@ Now Login with new password into ArgoCD GUI and create the application as shown 
 <br><br/>
 After Deploying Application through ArgoCD
 ![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/492ee2ce-be53-4175-b17e-daa03e406d86)
+![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/d6443f77-559d-425f-abca-bebb2bd97320)
 
 
