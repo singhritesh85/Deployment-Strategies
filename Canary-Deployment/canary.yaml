@@ -33,7 +33,7 @@ spec:
     spec:
       containers:
       - name: zokosakiyachi-container
-        image: httpd:2.4.55
+        image: nginx:1.25.5        ###httpd:2.4.55
         ports:
         - containerPort: 80
         resources:
