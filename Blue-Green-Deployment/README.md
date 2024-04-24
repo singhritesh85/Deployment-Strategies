@@ -36,3 +36,17 @@ Install Argocd as shown in the screenshot below
 ![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/d1acabab-fce4-42da-bd79-4b8492977f92)
 ![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/73bc5beb-07d4-4e66-95bc-b89f4b8d4505)
 ![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/98b7d8f9-f3a9-4ee2-9ab4-dc0dadf1eed7)
+
+<br><br/>
+Generate ArgoCD password using the below command
+<br><br/>
+```
+kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath='{.data.password}' | base64 -d
+```
+<br><br/>
+![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/282efc15-f3fe-4fe6-b24d-18a0d560caaa)
+<br><br/>
+Change the ArgoCD password as shown below in screenshot
+![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/4718e222-0a5e-4074-abf3-0fdd75f1a967)
+![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/a339cee7-e103-4703-885e-c8fad7a84da0)
+
