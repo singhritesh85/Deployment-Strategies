@@ -1,4 +1,4 @@
-# Canary Deployment
+# ![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/707ec806-9ee2-41f4-9e10-338f6c013cc3)Canary Deployment
 
 **Canary Deployment** In Canary deployment you can split the traffic between newer version of application and older version of application. If you satisfied with the newer version of application then you can promote the rollout to newer version of application.
 <br><br/>
