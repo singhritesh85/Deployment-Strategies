@@ -98,6 +98,7 @@ sudo mv ./kubectl-argo-rollouts-linux-amd64 /usr/local/bin/kubectl-argo-rollouts
 ![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/65b635be-0d18-4c24-b130-38899b5ae15a)
 ![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/d2f57810-8bdc-4577-b77d-89e82e6a1031)
 ![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/b87f8967-3db3-4b04-b1d5-3993a07a9341)
+![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/dd16329d-39bd-4495-85c3-8a545cbe59d3)
 <br><br/>
 
 
