@@ -143,5 +143,8 @@ sudo mv ./kubectl-argo-rollouts-linux-amd64 /usr/local/bin/kubectl-argo-rollouts
 **Now new Application reflects when accessing the URL**
 ![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/fb386350-470d-4992-82f8-d8ea2280de9e)
 
+<br><br/>
+You can also mention revisionHistoryLimit in the canary.yaml file which means how many old replicasets you want to retain, the default value is 10.
+<br><br/>
 
 **Reference**=https://argo-rollouts.readthedocs.io/en/stable/features/canary/
