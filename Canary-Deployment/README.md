@@ -8,7 +8,7 @@ I have created EKS Cluster using the terraform script https://github.com/singhri
 <br><br/>
 **To demonstrate Canary Deployment I have used ArgoCD and Argo Rollout.** For ingress controller I have used nginx ingress controller.
 <br><br/>
-For older image I have used httpd:2.4.55 and newer version of image I have used nginx:1.25.5. 
+For older image I have used nginx:1.25.5 and newer version of image I have used httpd:2.4.55. 
 <br><br/>
 ![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/5ddd1f70-03e3-45e9-bb50-dc2417efcda9)
 ![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/fb534bb6-8c2b-4843-995a-fe60547b5ced)
@@ -100,5 +100,6 @@ sudo mv ./kubectl-argo-rollouts-linux-amd64 /usr/local/bin/kubectl-argo-rollouts
 ![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/b87f8967-3db3-4b04-b1d5-3993a07a9341)
 ![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/dd16329d-39bd-4495-85c3-8a545cbe59d3)
 <br><br/>
+![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/2faf32aa-87b9-40f2-809f-ed5a2a5fa404)
 
 
