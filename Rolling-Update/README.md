@@ -92,3 +92,11 @@ Change the ArgoCD default admin user password
 ![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/58da5ed3-4cd2-482a-bbc4-07f26ae29433)
 ![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/e5ad1b19-7a41-437b-94c0-5dff55ef5b47)
 ![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/3e8e62bb-ff69-499e-91d0-a8bcb8c2aac7)
+![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/803f67ef-4b2c-4e03-acc2-9a22463db42a)
+<br><br/>
+Finally Able to access the application using the URL.
+<br><br/>
+![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/4c40048d-4817-4069-b62d-e0777003dfdc)
+<br><br/>
+Now change the Image from httpd:2.4.55 to nginx:1.25.5 and observe how Rolling Update spin up the pods.
+<br><br/>
