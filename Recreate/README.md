@@ -83,4 +83,7 @@ Change the ArgoCD default admin user password
 ![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/a15d3b8e-f8f7-422e-a113-c34b3ad560d4)
 ![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/9afd3e2e-8b5a-4823-a59c-d10afe9dbeee)
 **Create the Application using ArgoCD as shown in the screenshot below**
+<br><br/>
+![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/36403ea1-1109-4639-9753-dbfef472293c)
+![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/eb948388-f510-4e85-b0c4-b3eec2feca3a)
 
