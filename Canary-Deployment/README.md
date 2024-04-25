@@ -75,5 +75,8 @@ kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/st
 ![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/8b557163-7bcb-43ff-900a-4196e0422442)
 ![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/5484999e-c8d2-437b-ac8a-28b176b87f9c)
 ![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/5bff1224-72fa-4cac-bba4-0d238c23bdce)
+<br><br/>
+Change the ArgoCD default admin password
+![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/1662f989-e0e0-4c6e-b34e-d613fef57742)
 
 
