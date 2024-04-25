@@ -12,7 +12,7 @@ spec:
   selector:
     matchLabels:
       app: recreate
-  replicas: 3
+  replicas: 2
   strategy:
     type: Recreate
   template:
