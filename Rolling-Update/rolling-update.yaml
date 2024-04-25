@@ -18,7 +18,7 @@ spec:
     type: RollingUpdate
     rollingUpdate: 
       maxSurge: 1          ### one additional pod created 
-      maxUnavailable: 1    ### one pod can be unavailable 
+#      maxUnavailable: 1    ### one pod can be unavailable 
   template:
     metadata:
       labels:
