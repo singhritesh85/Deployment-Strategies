@@ -31,6 +31,33 @@ edit the service for nginx-ingress-controller and provide the ARN of Amazon Cert
 ![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/148f9dba-2a52-444e-900a-e16e12f5c81a)
 <br><br>
 Install Argocd as shown in the screenshot below
+```
+Ingress Rule for ArgoCD
+=============================
+vim ingress-rule.yaml
+
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: minimal-ingress
+  namespace: argocd
+  annotations:
+    kubernetes.io/ingress.class: nginx
+    nginx.ingress.kubernetes.io/backend-protocol: "HTTPS"    ###  Using this annotation, you can Access ArgoCD on port http and https
+spec:
+#  ingressClassName: nginx
+  rules:
+  - host: argocd.singhritesh85.com
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: argocd-server   ### Provide your service Name
+            port:
+              number: 80   
+```
 <br><br/>
 ![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/f405a881-96bc-44fc-9858-dc4b32545363)
 ![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/d1acabab-fce4-42da-bd79-4b8492977f92)
