@@ -29,7 +29,7 @@ Edit the nginx ingress controller service and provide ARN of Amazon Certificate 
 kubectl get svc -n ingress-nginx
 kubectl edit svc ingress-nginx-controller  -n ingress-nginx
 
-Change the targetPort for https to 80 in nginx ingress controller service as written below:-
+Change the targetPort from https to http in nginx ingress controller service as written below:-
 -------------------------------------------------------------------------------------------------------------------------------
 Before:
 
