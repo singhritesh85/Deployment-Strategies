@@ -18,14 +18,14 @@ spec:
       canaryService: yamada-service-canary 
       stableService: yamada-service-stable
       steps:
-      - setWeight: 20
+      - setWeight: 20  ### Percentage of traffic to be sent to new version of application. 20% of 5 pods, 1 new pod will be created.
       - pause: {}  ### Indefinite pause and waiting for promote rollout 
-      - setWeight: 40
-      - pause: {duration: 10s}
-      - setWeight: 60
-      - pause: {duration: 10s}
-      - setWeight: 80
-      - pause: {duration: 10s}
+      - setWeight: 40  ### Percentage of traffic to be sent to new version of application. 40% of 5 pods, 2 more new pods will be created.
+      - pause: {duration: 10s}    ### pause for 10 seconds
+      - setWeight: 60  ### Percentage of traffic to be sent to new version of application. 60% of 5 pods, n more new pods will be created, n value is taken in general to make it understandable to users. You can also consider replicas: 10 to make it more understandable to you.
+      - pause: {duration: 10s}    ### pause for 10 seconds
+      - setWeight: 80  ### Percentage of traffic to be sent to new version of application. 80% of 5 pods, n more new pods will be created, n value is taken in general to make it understandable to users. You can also consider replicas: 10 to make it more understandable to you.
+      - pause: {duration: 10s}    ### pause for 10 seconds
   template:
     metadata:
       labels:
