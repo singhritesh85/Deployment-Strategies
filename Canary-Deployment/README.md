@@ -101,5 +101,19 @@ sudo mv ./kubectl-argo-rollouts-linux-amd64 /usr/local/bin/kubectl-argo-rollouts
 ![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/dd16329d-39bd-4495-85c3-8a545cbe59d3)
 <br><br/>
 ![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/2faf32aa-87b9-40f2-809f-ed5a2a5fa404)
+![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/3a8accc2-8f04-4203-b0f1-fb67f9b1801c)
+<br><br/>
+**Now Changed the Image to httpd:2.4.55 from older image nginx:1.25.5, In ArgoCD while creation of Application sync policy is chosen as Automatic. So when the image is changed in yaml then it will automatically reflects in Application's new version.**
+<br><br/>
+![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/506b4e2d-e85f-4a6f-bcef-2b7867266cb4)
+<br><br/>
+**Promote the Rollout**
+<br><br/>
+![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/f1e72c71-f940-4654-afd5-51e5ca5a9b67)
+![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/63277083-8064-4908-bffa-1edb999dda2c)
+![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/af4dbfe3-555d-4115-9bee-cbba09ab8674)
+<br><br/>
+**Now new Application reflects when accessing the URL**
+![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/fb386350-470d-4992-82f8-d8ea2280de9e)
 
 
