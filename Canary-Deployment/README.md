@@ -69,6 +69,33 @@ Get the Password of ArgoCD
 ===========================
 kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
 ```
+```
+Ingress Rule for ArgoCD
+=============================
+vim ingress-rule.yaml
+
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: minimal-ingress
+  namespace: argocd
+  annotations:
+    kubernetes.io/ingress.class: nginx
+    nginx.ingress.kubernetes.io/backend-protocol: "HTTPS"    ###  Using this annotation, you can Access ArgoCD on port http and https
+spec:
+#  ingressClassName: nginx
+  rules:
+  - host: argocd.singhritesh85.com
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: argocd-server   ### Provide your service Name
+            port:
+              number: 80   
+```
 ![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/8744fba8-07f7-4678-8b4f-7ad82dd629d9)
 ![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/960df167-878f-40b0-9e38-5ac9a841da05)
 ![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/d7b6f095-4847-4a45-b3b4-7f8513ce32db)
