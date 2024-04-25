@@ -38,3 +38,52 @@ After:
 ```
 ![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/4407df58-0cbf-471d-b5e7-0fcdad6f1d84)
 ![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/36ce9802-802a-4f5a-9095-e222da8f990d)
+<br><br/>
+I have used ArgoCD to create Application.
+<br><br/>
+**Installation of ArgoCD**
+```
+kubectl create namespace argocd
+kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
+
+Get the Password of ArgoCD
+===========================
+kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
+```
+```
+Ingress Rule for ArgoCD
+=============================
+vim ingress-rule.yaml
+
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: minimal-ingress
+  namespace: argocd
+  annotations:
+    kubernetes.io/ingress.class: nginx
+    nginx.ingress.kubernetes.io/backend-protocol: "HTTPS"    ###  Using this annotation, you can Access ArgoCD on port http and https
+spec:
+#  ingressClassName: nginx
+  rules:
+  - host: argocd.singhritesh85.com
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: argocd-server   ### Provide your service Name
+            port:
+              number: 80   
+```
+![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/ded841df-263d-42ce-ae65-beba2e8697e2)
+![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/3a5011a1-2029-4c16-9659-d716771f2c21)
+![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/4ed8676c-092c-40ac-8dca-12d61b6c1283)
+<br><br/>
+Change the ArgoCD default admin password
+<br><br/>
+![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/a15d3b8e-f8f7-422e-a113-c34b3ad560d4)
+![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/9afd3e2e-8b5a-4823-a59c-d10afe9dbeee)
+**Create the Application using ArgoCD as shown in the screenshot below**
+<br><br/>
