@@ -26,7 +26,7 @@ spec:
     spec:
       containers:
       - name: rolling-update-container
-        image: httpd:2.4.55             ### nginx:1.25.5
+        image: nginx:1.25.5            ### httpd:2.4.55
         ports:
         - containerPort: 80
         resources:
