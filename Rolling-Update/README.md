@@ -48,7 +48,7 @@ kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/st
 
 Get the Password of ArgoCD
 ===========================
-kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
+kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath='{.data.password}' | base64 -d
 ```
 ```
 Ingress Rule for ArgoCD
@@ -81,7 +81,7 @@ spec:
 ![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/3a5011a1-2029-4c16-9659-d716771f2c21)
 ![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/4ed8676c-092c-40ac-8dca-12d61b6c1283)
 <br><br/>
-Change the ArgoCD default admin password
+Change the ArgoCD default admin user password
 <br><br/>
 ![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/a15d3b8e-f8f7-422e-a113-c34b3ad560d4)
 ![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/9afd3e2e-8b5a-4823-a59c-d10afe9dbeee)
