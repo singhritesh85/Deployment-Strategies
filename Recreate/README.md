@@ -97,6 +97,6 @@ Finally Able to access the application using the URL.
 Now change the Image from httpd:2.4.55 to nginx:1.25.5 and observe how Recreate deployment strategy spin up the pods. As the sync policy is kept Automatic for this Application in ArgoCD and hence these changes will be automactically deployed to created newer version of application.
 <br><br/>
 **You will find first of all all the older application pods will be deleted and the newer application pods will be created.**
-![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/49b8d301-5940-4fa4-88e1-10ac38a15da5)
+![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/55fb24c8-5fe1-4e7b-866a-d3f0232e97eb)
 ![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/61e2663b-6b21-4498-ac63-60fcc2a3cb2c)
 
