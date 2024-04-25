@@ -54,3 +54,6 @@ After:
       protocol: TCP
       targetPort: http
 ```
+![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/0e4d62be-99ab-4200-8cfc-eeaef5ec8fa2)
+![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/b89b614b-06e7-49cb-bf82-989ee97f7378)
+
