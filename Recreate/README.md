@@ -1,0 +1,1 @@
+**Recreate** In recreate deployment strategy first of all the older version of application will be deleted and then newer version of application will be created. This deployment strategy will suffer a downtime and hence it is not suggestable for production environment. However this deployment strategy is relatively faster so you can prefer it for UAT/Stage environment.
