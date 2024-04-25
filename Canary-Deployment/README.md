@@ -70,7 +70,7 @@ Get the Password of ArgoCD
 kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
 ```
 ![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/8744fba8-07f7-4678-8b4f-7ad82dd629d9)
-![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/46312643-f863-4e1a-9bf2-901e27b65558)
+![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/960df167-878f-40b0-9e38-5ac9a841da05)
 ![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/d7b6f095-4847-4a45-b3b4-7f8513ce32db)
 ![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/8b557163-7bcb-43ff-900a-4196e0422442)
 ![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/5484999e-c8d2-437b-ac8a-28b176b87f9c)
