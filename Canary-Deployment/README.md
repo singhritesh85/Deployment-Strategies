@@ -52,5 +52,5 @@ After:
     - name: https
       port: 443
       protocol: TCP
-      targetPort: 80
+      targetPort: http
 ```
