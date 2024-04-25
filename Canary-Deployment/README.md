@@ -95,5 +95,9 @@ sudo mv ./kubectl-argo-rollouts-linux-amd64 /usr/local/bin/kubectl-argo-rollouts
 **Create the Application in ArgoCD as shown in the screenshot below**
 <br><br/>
 ![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/c8fc6a2b-a5fb-4492-be2e-89dc3f6f9c52)
-![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/410a83f3-08b8-41f4-8ed2-1426196284a9)
+![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/65b635be-0d18-4c24-b130-38899b5ae15a)
+![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/d2f57810-8bdc-4577-b77d-89e82e6a1031)
+![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/b87f8967-3db3-4b04-b1d5-3993a07a9341)
+<br><br/>
+
 
