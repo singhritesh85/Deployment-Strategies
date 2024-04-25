@@ -59,4 +59,21 @@ After:
 ![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/b006d290-84e0-4db6-8e20-48a3839987cd)
 ![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/8a03ac6d-d943-4406-9851-507a2cc869fd)
 ![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/7618170b-d02b-4826-a846-7e8fad451bda)
+<br><br/>
+**Installation of ArgoCD**
+```
+kubectl create namespace argocd
+kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
+
+Get the Password of ArgoCD
+===========================
+kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
+```
+![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/8744fba8-07f7-4678-8b4f-7ad82dd629d9)
+![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/46312643-f863-4e1a-9bf2-901e27b65558)
+![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/d7b6f095-4847-4a45-b3b4-7f8513ce32db)
+![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/8b557163-7bcb-43ff-900a-4196e0422442)
+![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/5484999e-c8d2-437b-ac8a-28b176b87f9c)
+![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/5bff1224-72fa-4cac-bba4-0d238c23bdce)
+
 
