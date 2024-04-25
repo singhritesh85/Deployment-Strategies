@@ -144,3 +144,4 @@ sudo mv ./kubectl-argo-rollouts-linux-amd64 /usr/local/bin/kubectl-argo-rollouts
 ![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/fb386350-470d-4992-82f8-d8ea2280de9e)
 
 
+**Reference**=https://argo-rollouts.readthedocs.io/en/stable/features/canary/
