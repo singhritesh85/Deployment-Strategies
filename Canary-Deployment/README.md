@@ -79,5 +79,21 @@ kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/st
 Change the ArgoCD default admin password
 ![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/1662f989-e0e0-4c6e-b34e-d613fef57742)
 ![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/9dbe4502-4276-456b-b675-126b44278142)
-
+<br><br/>
+**Install Argo Rollout Controller**
+```
+kubectl create namespace argo-rollouts
+kubectl apply -n argo-rollouts -f https://github.com/argoproj/argo-rollouts/releases/latest/download/install.yaml
+```
+**Install Argo Rollouts kubectl plugin**
+```
+curl -LO https://github.com/argoproj/argo-rollouts/releases/latest/download/kubectl-argo-rollouts-linux-amd64
+chmod +x ./kubectl-argo-rollouts-linux-amd64
+sudo mv ./kubectl-argo-rollouts-linux-amd64 /usr/local/bin/kubectl-argo-rollouts
+```
+<br><br/>
+**Create the Application in ArgoCD as shown in the screenshot below**
+<br><br/>
+![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/c8fc6a2b-a5fb-4492-be2e-89dc3f6f9c52)
+![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/410a83f3-08b8-41f4-8ed2-1426196284a9)
 
