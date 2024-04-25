@@ -13,12 +13,12 @@ spec:
     matchLabels:
       app: demo
   replicas: 5
-  minReadySeconds: 5       ### This much number of seconds a pod will take to get it ready. 
+  #minReadySeconds: 5       ### This much number of seconds a pod will take to get it ready. 
   strategy:
     type: RollingUpdate
     rollingUpdate: 
       maxSurge: 1          ### one additional pod created 
-      maxUnavailable: 1    ### one pod can be unavailable 
+ #     maxUnavailable: 1    ### one pod can be unavailable 
   template:
     metadata:
       labels:
@@ -26,7 +26,7 @@ spec:
     spec:
       containers:
       - name: rolling-update-container
-        image: httpd:2.4.55            ### nginx:1.25.5
+        image: nginx:1.25.5            ###   httpd:2.4.55
         ports:
         - containerPort: 80
         resources:
