@@ -2,7 +2,7 @@
 
 **Rolling Update**  In Rolling Update deployment strategy either a new pod will be created or a pod will be deleted then a newer one will be created with newer version of application depending on maxSurge or maxUnavailable respectively. When you use **maxSurge** then this much number of newer pods will be created above the desired replicas and **maxUnavailable** represents maximum number of pods unavailable during an upgrade.
 <br><br/>
-For this demonstration I have used **maxSurge**.
+You cannot keep **maxSurge** and **maxUnavailable** both equals to zero simultaneously. For the current demonstration I kept **maxSurge** and **maxUnavailable** equals to 1 which means during the rollingUpdate one additional pod will be created and one pod can be unavailable.
 <br><br/>
 I have created an older version of application using httpd:2.4.55 image and newer version of application using nginx:1.25.5 image.
 <br><br/>
