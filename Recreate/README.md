@@ -93,5 +93,10 @@ Change the ArgoCD default admin user password
 Finally Able to access the application using the URL.
 <br><br/>
 ![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/2bea0613-c483-42e1-b0a6-f81d74039abb)
-
+<br><br/>
+Now change the Image from httpd:2.4.55 to nginx:1.25.5 and observe how Recreate deployment strategy spin up the pods. As the sync policy is kept Automatic for this Application in ArgoCD and hence these changes will be automactically deployed to created newer version of application.
+<br><br/>
+**You will find first of all all the older application pods will be deleted and the newer application pods will be created.**
+![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/daa71427-2d3e-493f-a59b-83221b8ca7ab)
+![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/61e2663b-6b21-4498-ac63-60fcc2a3cb2c)
 
