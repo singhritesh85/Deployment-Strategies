@@ -56,4 +56,7 @@ After:
 ```
 ![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/0e4d62be-99ab-4200-8cfc-eeaef5ec8fa2)
 ![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/b89b614b-06e7-49cb-bf82-989ee97f7378)
+![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/b006d290-84e0-4db6-8e20-48a3839987cd)
+![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/8a03ac6d-d943-4406-9851-507a2cc869fd)
+![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/7618170b-d02b-4826-a846-7e8fad451bda)
 
