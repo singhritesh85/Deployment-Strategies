@@ -98,5 +98,6 @@ Finally Able to access the application using the URL.
 <br><br/>
 ![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/4c40048d-4817-4069-b62d-e0777003dfdc)
 <br><br/>
-Now change the Image from httpd:2.4.55 to nginx:1.25.5 and observe how Rolling Update spin up the pods.
+Now change the Image from httpd:2.4.55 to nginx:1.25.5 and observe how Rolling Update spin up the pods. As the sync policy is kept Automatic for this Application in ArgoCD and hence these changes will be automactically deployed to created newer version of application.
 <br><br/>
+![image](https://github.com/singhritesh85/Deployment-Strategies/assets/56765895/04576b4d-53ad-4bf6-9325-a5e7c0ab8aa6)
